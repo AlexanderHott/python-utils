@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+# License: MIT
 import winreg
 import re
 

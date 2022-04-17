@@ -164,9 +164,3 @@ def list_screens() -> list[Screen]:
     #     Screen(".".join(l.split(".")[1:]).split("\t")[0])
     #     for l in getoutput("screen -ls | grep -P '\t'").split("\n")
     # ]
-
-
-# screens = list_screens()
-
-# for screen in screens:
-#     print(repr(screen))
