@@ -69,10 +69,10 @@ def main():
             # create a list of lines of the header including the \n
             # Note: the last item in the list is a single \n so we don't need to add it
             header_list = [line + "\n" for line in HEADER.split("\n")][:-1]
-            
+
             comment_section, code_section = split_buffer(inbuffer)
             outbuffer = header_list + code_section
-            
+
             # if the file is empty add the header
             if not inbuffer:
                 open(filename, "w").writelines(outbuffer)
